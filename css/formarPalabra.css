@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e9a0eb;
+    color: black;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.letra-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.letra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #42026d;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+
+.letra:hover {
+    background-color: #5c25b0;
+}
+
+.letra:active {
+    animation: animacionClick 1s ease-in-out; 
+}
+
+@keyframes animacionClick {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        background-color: #bb66bb; 
+    }
+}
+
+#contenedorSeleccionadas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.letra-seleccionada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(10, 194, 10);
+    margin: 0 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.letra-seleccionada:hover {
+    background-color: #bb66bb; 
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #42026d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
